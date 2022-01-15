@@ -104,7 +104,6 @@ def get_xml_type(val):
 def escape_xml(s):
     if type(s) in (str, unicode):
         s = unicode_me(s) # avoid UnicodeDecodeError
-        s = s.replace('&', '&amp;')
         s = s.replace('"', '&quot;')
         s = s.replace('\'', '&apos;')
         s = s.replace('<', '&lt;')
